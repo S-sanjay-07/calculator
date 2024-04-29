@@ -1,0 +1,123 @@
+<!DOCTYPE html>  
+<html lang = "en">  
+<head>  
+<title> JavaScript Calculator </title>  
+  
+<style>  
+h2{
+    text-shadow: 0px 0px 3px rgb(213, 2, 2);
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+  
+#clear{  
+box-shadow: 2px 2px black;
+width: 100px;  
+border: 3px solid rgb(128, 128, 128);  
+    border-radius: 35px;  
+    padding: 5px;  
+    background-color: rgb(0, 238, 255);  
+}  
+  
+.formstyle  
+{  
+    background-image: url(img/cals.jpg);
+    background-size: cover;
+width: 300px;  
+height: 530px;  
+margin: auto;  
+border: 5px solid rgb(235, 135, 135);  
+border-radius: 50px;
+box-shadow: 0px 0px 200px rgb(8, 202, 216); 
+border: 5px solid rgb(14, 146, 146);
+padding: 40px;  
+
+}  
+/* .formstyle:hover{
+    background: #d27f7f;
+}
+   */
+  
+  
+input  
+{  
+    
+    box-shadow: 0px 0px 10px rgb(0, 221, 255);
+width: 20px;  
+background-color: rgb(174, 173, 173);  
+color: rgb(0, 0, 0);  
+
+    
+border: 3px solid rgb(7, 7, 7);  
+    border-radius: 15px;  
+    padding: 28px;  
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;  
+    font-size: 20px; 
+    font-weight: bolder;
+     
+}  
+  
+  /* disp */
+#calc{  
+width: 250px;  
+font-size: 30px;
+font-weight: bolder;
+border: 5px solid rgb(129, 113, 113);  
+    border-radius: 20px;  
+    padding: 20px;  
+    margin: auto;  
+}  
+.s{
+    margin-top: 10px;
+    
+}
+.sa:hover{
+    background: #e38888;
+}
+  /* .d{
+   
+  } */
+</style>  
+  
+</head>  
+<body style="background-color:antiquewhite;">   
+    <h2>CALULATOR</h2>  
+<div class= "formstyle">
+  
+<form name = "form1">  
+    <div class="d">
+     
+      
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  <input type = "button" value = "1" onclick = "answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <br> <br>  
+    
+    <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+    
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) " class="sa">  
+  <input type = "button" value = "C" onclick = "form1.answer.value = ' ' " id= "clear" class="s" > 
+</div>
+</form>  
+</div>  
+</body>  
+</html>  
